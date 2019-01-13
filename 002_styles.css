@@ -1,0 +1,33 @@
+/*
+Flexbox Container
+  display: flex | inline-flex;  # Define una caja flexible de bloque o línea
+
+  flex-direction: row | row-reverse | column | column-reverse;  # Define el eje principal y el transversal de la caja flexible
+      row       x-principal     y-tranversal
+      column    x-transversal   y-principal
+
+
+  flex-wrap: nowrap | wrap | wrap-reverse;  # Determina si hay o no salto de línea y el sentido de la misma
+*/
+
+.container{
+  padding: 1rem;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  background-color: steelblue;
+  border: medium solid #333;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.item{
+  border: thin solid #333;
+  font-size: 2rem;
+  background-color: deepskyblue;
+  width: 15%;
+  height: 30%;
+}
